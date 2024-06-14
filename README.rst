@@ -11,7 +11,7 @@ Close the repository by typing in a terminal:
 
     git clone https://github.com/Countoscope/countoscope.github.io.git
 
-To build the documentation localy, go to the [docs/](docs/) folder and type:
+To build the documentation localy, go to the docs/ folder and type:
 
 .. code-block:: bash
 

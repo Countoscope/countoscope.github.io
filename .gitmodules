@@ -1,0 +1,3 @@
+[submodule "countoscope"]
+	path = countoscope
+	url = git@github.com:Countoscope/countoscope.git

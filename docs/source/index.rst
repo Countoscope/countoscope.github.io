@@ -15,9 +15,7 @@ Indices and tables
 .. toctree::
    :maxdepth: 2
    :hidden:
-
-   modules/TRAJECTORY
-   modules/BOX
-   modules/SORTING
-   modules/COUNTOSCOPE
-   modules/UTILITIES
+   
+   modules/trajectorytool
+   modules/boxcountingtool
+   modules/countoscope

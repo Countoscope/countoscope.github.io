@@ -1,4 +1,4 @@
 [submodule "countoscope"]
 	path = countoscope
-	url = https://github.com/Countoscope/countoscope.git
+	url = git@github.com:Countoscope/countoscope.git
 	branch = develop

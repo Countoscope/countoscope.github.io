@@ -1,5 +1,6 @@
 sphinx
 furo
+numpy
 sphinx-togglebutton
 sphinx-favicon
 sphinxcontrib.bibtex

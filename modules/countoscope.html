@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -236,14 +236,44 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="countoscope">
-<h1>Countoscope<a class="headerlink" href="#countoscope" title="Link to this heading">¶</a></h1>
+          <section id="module-countoscope.countoscope">
+<span id="countoscope"></span><h1>Countoscope<a class="headerlink" href="#module-countoscope.countoscope" title="Link to this heading">¶</a></h1>
+<p>Module for sorting the particles in boxes.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="countoscope.countoscope.Countoscope">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">countoscope.countoscope.</span></span><span class="sig-name descname"><span class="pre">Countoscope</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.countoscope.Countoscope" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="boxcountingtool.html#countoscope.boxcountingtool.BoxCountingTool" title="countoscope.boxcountingtool.BoxCountingTool"><code class="xref py py-class docutils literal notranslate"><span class="pre">BoxCountingTool</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="countoscope.countoscope.Countoscope.count">
+<span class="sig-name descname"><span class="pre">count</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.countoscope.Countoscope.count" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="countoscope.countoscope.Countoscope.evaluate_correlation">
+<span class="sig-name descname"><span class="pre">evaluate_correlation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.countoscope.Countoscope.evaluate_correlation" title="Link to this definition">¶</a></dt>
+<dd><p>Evaluate the correlation function.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="countoscope.countoscope.Countoscope.evaluate_deltaN2">
+<span class="sig-name descname"><span class="pre">evaluate_deltaN2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.countoscope.Countoscope.evaluate_deltaN2" title="Link to this definition">¶</a></dt>
+<dd><p>Evaluate &lt;deltan2&gt;</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="countoscope.countoscope.Countoscope.evaluate_mean_particle_number">
+<span class="sig-name descname"><span class="pre">evaluate_mean_particle_number</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.countoscope.Countoscope.evaluate_mean_particle_number" title="Link to this definition">¶</a></dt>
+<dd><p>Evaluate &lt;N&gt; &lt;N&gt;^2 and &lt;N^2&gt;.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
         </article>
@@ -281,8 +311,33 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Countoscope</a><ul>
+<li><a class="reference internal" href="#countoscope.countoscope.Countoscope"><code class="docutils literal notranslate"><span class="pre">Countoscope</span></code></a><ul>
+<li><a class="reference internal" href="#countoscope.countoscope.Countoscope.count"><code class="docutils literal notranslate"><span class="pre">Countoscope.count()</span></code></a></li>
+<li><a class="reference internal" href="#countoscope.countoscope.Countoscope.evaluate_correlation"><code class="docutils literal notranslate"><span class="pre">Countoscope.evaluate_correlation()</span></code></a></li>
+<li><a class="reference internal" href="#countoscope.countoscope.Countoscope.evaluate_deltaN2"><code class="docutils literal notranslate"><span class="pre">Countoscope.evaluate_deltaN2()</span></code></a></li>
+<li><a class="reference internal" href="#countoscope.countoscope.Countoscope.evaluate_mean_particle_number"><code class="docutils literal notranslate"><span class="pre">Countoscope.evaluate_mean_particle_number()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

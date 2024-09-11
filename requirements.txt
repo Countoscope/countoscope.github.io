@@ -1,6 +1,7 @@
 sphinx
 furo
 numpy
+chemfiles
 sphinx-togglebutton
 sphinx-favicon
 sphinxcontrib.bibtex

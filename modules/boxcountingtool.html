@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -236,65 +236,14 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="module-countoscope.boxcountingtool">
-<span id="box-counting-tool"></span><h1>Box Counting Tool<a class="headerlink" href="#module-countoscope.boxcountingtool" title="Link to this heading">¶</a></h1>
-<p>Module for counting the particles into the boxes.</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="countoscope.boxcountingtool.BoxCountingTool">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">countoscope.boxcountingtool.</span></span><span class="sig-name descname"><span class="pre">BoxCountingTool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">box_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.boxcountingtool.BoxCountingTool" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="trajectorytool.html#countoscope.trajectorytool.TrajectoryTool" title="countoscope.trajectorytool.TrajectoryTool"><code class="xref py py-class docutils literal notranslate"><span class="pre">TrajectoryTool</span></code></a></p>
-<p>Class for tools based on counting particles in boxes</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.boxcountingtool.BoxCountingTool.allocate_memory">
-<span class="sig-name descname"><span class="pre">allocate_memory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.boxcountingtool.BoxCountingTool.allocate_memory" title="Link to this definition">¶</a></dt>
-<dd><p>Create empty array for the particle counting.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.boxcountingtool.BoxCountingTool.prepare_boxes">
-<span class="sig-name descname"><span class="pre">prepare_boxes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.boxcountingtool.BoxCountingTool.prepare_boxes" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.boxcountingtool.BoxCountingTool.prepare_run">
-<span class="sig-name descname"><span class="pre">prepare_run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.boxcountingtool.BoxCountingTool.prepare_run" title="Link to this definition">¶</a></dt>
-<dd><p>Detect starting and stopping frames for analysis.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.boxcountingtool.BoxCountingTool.run_counting">
-<span class="sig-name descname"><span class="pre">run_counting</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.boxcountingtool.BoxCountingTool.run_counting" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.boxcountingtool.BoxCountingTool.select_the_slices">
-<span class="sig-name descname"><span class="pre">select_the_slices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.boxcountingtool.BoxCountingTool.select_the_slices" title="Link to this definition">¶</a></dt>
-<dd><p>Select the edged positions of the measurement boxes.</p>
-<p>If possible, i.e. if the system size can be divided into an even number of
-measurement boxes, the box_size provided by the user is used. Otherwise,
-the box_size is recalculated to allow for a slicing in evenly-sized boxes.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.boxcountingtool.BoxCountingTool.specify_measurement_box_size">
-<span class="sig-name descname"><span class="pre">specify_measurement_box_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.boxcountingtool.BoxCountingTool.specify_measurement_box_size" title="Link to this definition">¶</a></dt>
-<dd><p>Calculate the measurement box size in all N dimensions.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.boxcountingtool.BoxCountingTool.store_particle_into_boxes">
-<span class="sig-name descname"><span class="pre">store_particle_into_boxes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.boxcountingtool.BoxCountingTool.store_particle_into_boxes" title="Link to this definition">¶</a></dt>
-<dd><p>Run over the trajectory and place the particles into number_matrix</p>
-</dd></dl>
-
-</dd></dl>
-
+          <section id="box-counting-tool">
+<h1>Box Counting Tool<a class="headerlink" href="#box-counting-tool" title="Link to this heading">¶</a></h1>
 </section>
 
         </article>
@@ -340,36 +289,8 @@ the box_size is recalculated to allow for a slicing in evenly-sized boxes.</p>
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">Box Counting Tool</a><ul>
-<li><a class="reference internal" href="#countoscope.boxcountingtool.BoxCountingTool"><code class="docutils literal notranslate"><span class="pre">BoxCountingTool</span></code></a><ul>
-<li><a class="reference internal" href="#countoscope.boxcountingtool.BoxCountingTool.allocate_memory"><code class="docutils literal notranslate"><span class="pre">BoxCountingTool.allocate_memory()</span></code></a></li>
-<li><a class="reference internal" href="#countoscope.boxcountingtool.BoxCountingTool.prepare_boxes"><code class="docutils literal notranslate"><span class="pre">BoxCountingTool.prepare_boxes()</span></code></a></li>
-<li><a class="reference internal" href="#countoscope.boxcountingtool.BoxCountingTool.prepare_run"><code class="docutils literal notranslate"><span class="pre">BoxCountingTool.prepare_run()</span></code></a></li>
-<li><a class="reference internal" href="#countoscope.boxcountingtool.BoxCountingTool.run_counting"><code class="docutils literal notranslate"><span class="pre">BoxCountingTool.run_counting()</span></code></a></li>
-<li><a class="reference internal" href="#countoscope.boxcountingtool.BoxCountingTool.select_the_slices"><code class="docutils literal notranslate"><span class="pre">BoxCountingTool.select_the_slices()</span></code></a></li>
-<li><a class="reference internal" href="#countoscope.boxcountingtool.BoxCountingTool.specify_measurement_box_size"><code class="docutils literal notranslate"><span class="pre">BoxCountingTool.specify_measurement_box_size()</span></code></a></li>
-<li><a class="reference internal" href="#countoscope.boxcountingtool.BoxCountingTool.store_particle_into_boxes"><code class="docutils literal notranslate"><span class="pre">BoxCountingTool.store_particle_into_boxes()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

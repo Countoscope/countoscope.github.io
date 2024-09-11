@@ -26,11 +26,9 @@ jobs:
           python-version: 3.9
       - name: Install sphinx
         run: |
-          pip install sphinx
-          pip install furo
-          pip install sphinx-togglebutton
-          pip install sphinx-favicon
-          pip install sphinxcontrib.bibtex
+          pip install -r requirements.txt
+          cd countoscope/
+          pip install .
       - name: Build
         run: |
           cd docs/

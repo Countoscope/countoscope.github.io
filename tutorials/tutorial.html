@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Box Counting Tool" href="boxcountingtool.html" /><link rel="prev" title="Tutorial" href="../tutorials/tutorial.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Trajectory Tool" href="../modules/trajectorytool.html" /><link rel="prev" title="Countoscope" href="../index.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2024.08.06 -->
-        <title>Trajectory Tool - Countoscope 0.0.1 documentation</title>
+        <title>Tutorial - Countoscope 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
@@ -199,14 +199,14 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial.html">Tutorial</a></li>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Tutorial</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Python modules</span></p>
-<ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Trajectory Tool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="boxcountingtool.html">Box Counting Tool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="countoscope.html">Countoscope</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/trajectorytool.html">Trajectory Tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/boxcountingtool.html">Box Counting Tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/countoscope.html">Countoscope</a></li>
 </ul>
 
 </div>
@@ -227,7 +227,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/modules/trajectorytool.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/tutorials/tutorial.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -247,47 +247,68 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="module-countoscope.trajectorytool">
-<span id="trajectory-tool"></span><h1>Trajectory Tool<a class="headerlink" href="#module-countoscope.trajectorytool" title="Link to this heading">¶</a></h1>
-<p>Module for preparing the trajectories.</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="countoscope.trajectorytool.TrajectoryTool">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">countoscope.trajectorytool.</span></span><span class="sig-name descname"><span class="pre">TrajectoryTool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trajectory_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topology_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">system_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">array</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimension</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetric_system</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.trajectorytool.TrajectoryTool" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Class for tools based on trajectories.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.trajectorytool.TrajectoryTool.detect_system_dimension">
-<span class="sig-name descname"><span class="pre">detect_system_dimension</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.trajectorytool.TrajectoryTool.detect_system_dimension" title="Link to this definition">¶</a></dt>
-<dd><p>Attempt to guess the dimension from the trajectory.</p>
-<p>In case the dimension was entered by the user, make sure its value is
-consistent.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.trajectorytool.TrajectoryTool.detect_system_size">
-<span class="sig-name descname"><span class="pre">detect_system_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.trajectorytool.TrajectoryTool.detect_system_size" title="Link to this definition">¶</a></dt>
-<dd><p>From the box size, estimate the system lower and higher coordinate.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.trajectorytool.TrajectoryTool.import_trajectory">
-<span class="sig-name descname"><span class="pre">import_trajectory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.trajectorytool.TrajectoryTool.import_trajectory" title="Link to this definition">¶</a></dt>
-<dd><p>Import trajectory file using Chemfiles</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.trajectorytool.TrajectoryTool.prepare_trajectories">
-<span class="sig-name descname"><span class="pre">prepare_trajectories</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.trajectorytool.TrajectoryTool.prepare_trajectories" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="countoscope.trajectorytool.TrajectoryTool.read_information_trajectory">
-<span class="sig-name descname"><span class="pre">read_information_trajectory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#countoscope.trajectorytool.TrajectoryTool.read_information_trajectory" title="Link to this definition">¶</a></dt>
-<dd><p>Read basic information from trajectory</p>
-</dd></dl>
-
-</dd></dl>
-
+          <section id="tutorial">
+<h1>Tutorial<a class="headerlink" href="#tutorial" title="Link to this heading">¶</a></h1>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<p>In order to install the Countoscope Python tool, clone the repository using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Countoscope/countoscope.git
+</pre></div>
+</div>
+<p>Install all the required Python packages using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+</div>
+<p>Then, type:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>.
+</pre></div>
+</div>
+</section>
+<section id="use">
+<h2>Use<a class="headerlink" href="#use" title="Link to this heading">¶</a></h2>
+<p>In a Python script or a Jupyter Notebook, define the path to the data trajectory
+file. For instance, using the <cite>3D-closed</cite> dataset provided in the <cite>datasets</cite>
+repository:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">path_to_data</span> <span class="o">=</span> <span class="s2">&quot;/mpath/datasets/datasets/3D-closed/trajectory.xyz&quot;</span>
+</pre></div>
+</div>
+<p>Import the Countoscope as well as NumPy by typing:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">countoscope</span> <span class="kn">import</span> <span class="n">Countoscope</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+<p>The trajectory file <cite>trajectory.xyz</cite> corresponds to a system of 190 particles in
+a <span class="math notranslate nohighlight">\((30 Å)^3\)</span> box. Let us define the system size as a NumPy array:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">system_size</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Finally, let us choose a grid size for the Countoscope measurement:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">box_size</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Then, launch the Countoscope calculation using <em>trajectory_file</em>, <em>system_size</em>,
+and <em>box_size</em> as input parameters:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">Countoscope</span><span class="p">(</span><span class="n">trajectory_file</span> <span class="o">=</span> <span class="n">path_to_data</span><span class="p">,</span>
+                    <span class="n">system_size</span><span class="o">=</span><span class="n">system_size</span><span class="p">,</span>
+                    <span class="n">box_size</span><span class="o">=</span><span class="n">box_size</span><span class="p">)</span>
+<span class="n">results</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>After the calculation is done, all the computed data can be obtained from the
+<cite>results`object. For instance, for :math:`&lt;N&gt;</cite>, type:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">mean_of_N</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>which will return:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span>.84
+</pre></div>
+</div>
+<p>To plot <span class="math notranslate nohighlight">\(&lt;\Delta N^2&gt;\)</span>, let us import Pyplot first:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">loglog</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">delta_n2</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 </section>
 
         </article>
@@ -295,23 +316,23 @@ consistent.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="boxcountingtool.html">
+          <a class="next-page" href="../modules/trajectorytool.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Box Counting Tool</div>
+                <div class="title">Trajectory Tool</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../tutorials/tutorial.html">
+          <a class="prev-page" href="../index.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Tutorial</div>
+                <div class="title">Home</div>
                 
               </div>
             </a>
@@ -345,15 +366,9 @@ consistent.</p>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Trajectory Tool</a><ul>
-<li><a class="reference internal" href="#countoscope.trajectorytool.TrajectoryTool"><code class="docutils literal notranslate"><span class="pre">TrajectoryTool</span></code></a><ul>
-<li><a class="reference internal" href="#countoscope.trajectorytool.TrajectoryTool.detect_system_dimension"><code class="docutils literal notranslate"><span class="pre">TrajectoryTool.detect_system_dimension()</span></code></a></li>
-<li><a class="reference internal" href="#countoscope.trajectorytool.TrajectoryTool.detect_system_size"><code class="docutils literal notranslate"><span class="pre">TrajectoryTool.detect_system_size()</span></code></a></li>
-<li><a class="reference internal" href="#countoscope.trajectorytool.TrajectoryTool.import_trajectory"><code class="docutils literal notranslate"><span class="pre">TrajectoryTool.import_trajectory()</span></code></a></li>
-<li><a class="reference internal" href="#countoscope.trajectorytool.TrajectoryTool.prepare_trajectories"><code class="docutils literal notranslate"><span class="pre">TrajectoryTool.prepare_trajectories()</span></code></a></li>
-<li><a class="reference internal" href="#countoscope.trajectorytool.TrajectoryTool.read_information_trajectory"><code class="docutils literal notranslate"><span class="pre">TrajectoryTool.read_information_trajectory()</span></code></a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Tutorial</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#use">Use</a></li>
 </ul>
 </li>
 </ul>
@@ -369,5 +384,6 @@ consistent.</p>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </body>
 </html>

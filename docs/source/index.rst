@@ -8,11 +8,15 @@ Countoscope
 Indices and tables
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree:: 
+   :caption: Tutorial
+   :maxdepth: 2
+   :hidden:
+   
+   tutorials/tutorial
 
-.. toctree::
+.. toctree:: 
+   :caption: Python modules
    :maxdepth: 2
    :hidden:
    

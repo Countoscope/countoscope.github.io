@@ -64,7 +64,7 @@ and *box_size* as input parameters:
     results.run()
 
 After the calculation is done, all the computed data can be obtained from the
-`results`object. For instance, for :math:`<N>`, type:
+`results` object. For instance, for :math:`\langle N \rangle`, type:
 
 ..  code:: python
 
@@ -76,7 +76,7 @@ which will return:
 
     0.84
 
-To plot :math:`<\Delta N^2>`, let us import Pyplot first:
+To plot :math:`\langle \Delta N^2 \rangle`, let us import Pyplot first:
 
 ..  code:: python
 
